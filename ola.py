@@ -1,9 +1,10 @@
-# Spathiphyllum work 
-flower = input("Enter a follower ")
+"""writing a tax calculator"""
+income = float(input("Enter the annual income: "))
 
-if flower == "spathiphyllum":
-    print("No, I want a big Spathiphyllum!")
-elif flower != "Spathiphyllum":
-    print("Spathiphyllum! not", flower+"!")
-else:
-    print("Yes - Spathiphyllum is the best plant ever!")
+if income < 85528:
+	tax = income * 0.18 - 556.02
+# Write the rest of your code here.
+
+tax = round(tax, 0)
+print("The tax is:", tax, "thalers")
+ 

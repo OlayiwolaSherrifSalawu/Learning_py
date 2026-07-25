@@ -1,16 +1,14 @@
-"""writing a tax calculator"""
-income = float(input("Enter the annual income: "))
+# leap year checker 
+year = int(input("Enter a year: "))
 
-if income < 85528:
-	tax = income * 0.18 - 556.02
-	if tax<0:
-		tax=0
-elif income >85528:
-	tax= (income-14839.02)*0.32
-	tax+= 14839
-	if tax< 0:
-	    tax=0
-	
-		
-tax = round(tax, 0)
-print("The tax is:", tax, "thalers")
+if year < 1582:
+	print("Not within the Gregorian calendar period")
+else:
+    if year%400==0:
+          print("It is a leap year")
+    elif year%100==0:
+          print("it is a common year")
+    elif year%4==0:
+          print("It is a leap year")
+    else:
+          print("it is a common year")

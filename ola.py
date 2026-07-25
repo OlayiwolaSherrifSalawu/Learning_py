@@ -1,5 +1,9 @@
-x = float(input("Enter value for x: "))
+# Spathiphyllum work 
+flower = input("Enter a follower ")
 
-y = 1/(x+1/(x+1/(x+1/x)))
-
-print("y =", y)
+if flower == "spathiphyllum":
+    print("No, I want a big Spathiphyllum!")
+elif flower != "Spathiphyllum":
+    print("Spathiphyllum! not", flower+"!")
+else:
+    print("Yes - Spathiphyllum is the best plant ever!")

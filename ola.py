@@ -5,13 +5,11 @@ largest_number = -999999999
 number = int(input("Enter a number or type -1 to stop: "))
  
 # If the number is not equal to -1, continue.
-while number != -1:
-    # Is number larger than largest_number?
+
+while number!= -1:
     if number > largest_number:
-        # Yes, update largest_number.
-        largest_number = number
-    # Input the next number.
-    number = int(input("Enter a number or type -1 to stop: "))
- 
-# Print the largest number.
-print("The largest number is:", largest_number)
+        largest_number= number
+        print("large number",largest_number)
+    number = int(input())
+
+print("the lagest number =", largest_number)

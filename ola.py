@@ -1,7 +1,5 @@
-num1= float(input("Enter a number: "))
-num2= float(input("Enter another number: "))
+x = float(input("Enter value for x: "))
 
-print("addition:", num1+num2)
-print("subtraction:", num1-num2)
-print("division:", num1/num2)
-print("multiplication:", num1*num2)
+y = 1/(x+1/(x+1/(x+1/x)))
+
+print("y =", y)

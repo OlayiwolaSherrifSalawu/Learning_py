@@ -1,8 +1,7 @@
+num1= float(input("Enter a number: "))
+num2= float(input("Enter another number: "))
 
-pet = int(input("how old are you "))
-if pet <20:
-    pet/=2
-    print("you are ", pet, "year old? little minor")
-elif pet>20:
-    pet*= 2
-    print("you old hag you are", pet, "years old")
+print("addition:", num1+num2)
+print("subtraction:", num1-num2)
+print("division:", num1/num2)
+print("multiplication:", num1*num2)

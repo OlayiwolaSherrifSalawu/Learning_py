@@ -1,5 +1,5 @@
 # bubble sort 
-
+name= ""
 hit= [3,1,2,4,5]
 # swaped = True
 # while swaped:
@@ -7,7 +7,6 @@ hit= [3,1,2,4,5]
 #     for i in range(len(hit)-1):
 #         if hit[i]>hit[i+1]:
 #             swaped=True
-#             hit[i], hit[i+1]=hit[i+1],hit[i]
-
-hit.reverse()
-print(hit)
+my_list = [10, 8, 6, 4, 2]
+del my_list
+print(my_list)

@@ -8,5 +8,5 @@ hit= [3,1,2,4,5]
 #         if hit[i]>hit[i+1]:
 #             swaped=True
 my_list = [10, 8, 6, 4, 2]
-del my_list
+del my_list[:]
 print(my_list)

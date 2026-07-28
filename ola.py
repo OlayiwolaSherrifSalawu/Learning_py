@@ -1,7 +1,7 @@
-drawn = [5, 11, 9, 42, 3, 49]
-bets = [3, 7, 11, 42, 34, 49]
-hits = 0
-#unique value
-for i in drawn: 
-    if i in bets:
-        print(i)
+my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+new_list= []
+print("The list with unique elements only:")
+for i in my_list:
+    if i not in new_list:
+        new_list.append(i)
+print(new_list)

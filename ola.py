@@ -1,7 +1,7 @@
 # my first function 
 
-def message():
-    print("hello world!")
+def message(name):
+    print("hello!", name, "i Love you" )
 
-
-message()
+name = input("Please enter your name!")
+message(name)

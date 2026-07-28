@@ -13,3 +13,4 @@ print(board)
 #  this is a three d array and i can do it like this 
 
 rooms= [[[False for r in range(20)] for f in range(15)]for b in range(3)]
+print(rooms)

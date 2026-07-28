@@ -8,3 +8,8 @@ for i in range(len(board[1])):
     board[1][i]="pawn"
     board[6][i]="pawn"
 print(board)
+
+# an hotel with three building and each has about 15 floors and 20 rooms on each floor 
+#  this is a three d array and i can do it like this 
+
+rooms= [[[False for r in range(20)] for f in range(15)]for b in range(3)]

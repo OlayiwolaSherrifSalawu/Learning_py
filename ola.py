@@ -1,5 +1,7 @@
-
-WHITE_PAWN= "pawn"
-row = [WHITE_PAWN for i in range(8)]
-squares = [x ** 2 for x in range(10)]
-print(row)
+drawn = [5, 11, 9, 42, 3, 49]
+bets = [3, 7, 11, 42, 34, 49]
+hits = 0
+#unique value
+for i in drawn: 
+    if i in bets:
+        print(i)

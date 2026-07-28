@@ -1,7 +1,10 @@
-my_list = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
-new_list= []
-print("The list with unique elements only:")
-for i in my_list:
-    if i not in new_list:
-        new_list.append(i)
-print(new_list)
+board = [["EMPTY" for i in range(8)] for j in range(8)]
+
+board[0][0]="ROOK"
+board[0][7]="ROOK"
+board[7][0]="ROOK"
+board[7][7]="ROOK"
+for i in range(len(board[1])):
+    board[1][i]="pawn"
+    board[6][i]="pawn"
+print(board)

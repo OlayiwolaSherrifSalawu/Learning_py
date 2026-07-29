@@ -17,3 +17,10 @@ class KitchenCalculator:
         remaining_milk = starting_milk-total_milk
         
         return math.ceil(remaining_cereal), math.ceil(remaining_milk)
+
+
+class LayiClass:
+    def _init_(self, name):
+        self.name= name
+    def sing(self):
+        print(f"{self.name} is singing and needs help")

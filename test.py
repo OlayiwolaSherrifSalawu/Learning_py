@@ -1,8 +1,10 @@
-from ola import KitchenCalculator
+import ola
 def test_calculator():
     # Do not modify this testing wrapper
-    calc = KitchenCalculator()
+    calc = ola.KitchenCalculator()
     return list(calc.calculate_inventory())
 
 
 print(test_calculator())
+olayiwola= ola.LayiClass()
+olayiwola.sing()

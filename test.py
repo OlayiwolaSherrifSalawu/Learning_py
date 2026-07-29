@@ -6,5 +6,5 @@ def test_calculator():
 
 
 print(test_calculator())
-olayiwola= ola.LayiClass()
+olayiwola= ola.LayiClass("Olayiwola")
 olayiwola.sing()

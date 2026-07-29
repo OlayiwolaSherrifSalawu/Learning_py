@@ -1,32 +1,18 @@
-# my first function 
-
-def message(name:str):
-    print("hello!", name, "i Love you" )
-
-name = input("Please enter your name: ")
-message(name)
-
-# favourite food 
-
-def favFood(myFood):
-    for i in myFood:
-        if len(i)%2>2:
-            print(i, "is a terible food")
-        else:
-            print("i love", i, "too")
-            
-
-firstFood=  input("input three food you love: ")
-strd= ""
-myList= []
-for i in firstFood:
-    if i==" " and strd == "":
-        continue
-    if i !=" ":
-        strd+=i
-    elif i == " "  and strd != "":
-        myList.append(strd)
-        strd=""
+class KitchenCalculator:
+    def calculate_inventory(self):
+        customers = 3
+        cereal_per_customer = 2.5
+        milk_per_customer = 1.25
         
+        starting_cereal = 10.0
+        starting_milk = 15.0
         
-favFood(myList)
+        # 1. Use multiplication to calculate the totals needed
+        total_cereal = customers* cereal_per_customer
+        total_milk = customers*milk_per_customer
+        
+        # 2. Use subtraction to calculate the remaining inventory
+        remaining_cereal = starting_cereal-total_cereal
+        remaining_milk = starting_milk-total_milk
+        
+        return remaining_cereal, remaining_milk

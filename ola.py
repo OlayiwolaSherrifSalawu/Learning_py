@@ -20,7 +20,7 @@ class KitchenCalculator:
 
 
 class LayiClass:
-    def _init_(self, name):
-        self.name= name
+    def __init__(self, names):
+        self.name= names
     def sing(self):
         print(f"{self.name} is singing and needs help")

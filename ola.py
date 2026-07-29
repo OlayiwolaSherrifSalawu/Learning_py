@@ -32,4 +32,5 @@ def add_half_naira(price):
 # Equivalent Lambda Function
 # Syntax: lambda input_variable: expression_to_return
 lambda_tax = lambda price: price + 0.50
-print(lambda_tax)
+lambda_name= lambda name:  print(f"hello {name}")
+print(lambda_name("ola"),lambda_tax(45))

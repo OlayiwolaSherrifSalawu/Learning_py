@@ -1,3 +1,4 @@
+import math
 class KitchenCalculator:
     def calculate_inventory(self):
         customers = 3
@@ -15,4 +16,4 @@ class KitchenCalculator:
         remaining_cereal = starting_cereal-total_cereal
         remaining_milk = starting_milk-total_milk
         
-        return remaining_cereal, remaining_milk
+        return math.ceil(remaining_cereal), math.ceil(remaining_milk)

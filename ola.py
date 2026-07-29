@@ -26,11 +26,12 @@ import math
 #         print(f"{self.name} is singing and needs help")
 
 # Standard Function Definition
-def add_half_naira(price):
-    return price + 0.50
+# def add_half_naira(price):
+#     return price + 0.50
 
 # Equivalent Lambda Function
 # Syntax: lambda input_variable: expression_to_return
 lambda_tax = lambda price: price + 0.50
 lambda_name= lambda name:  print(f"hello {name}")
-print(lambda_name("ola"),lambda_tax(45))
+lambda_name("olayiwola")
+print(lambda_tax(45))

@@ -24,3 +24,23 @@ func fibonnacii(n int) int {
 	}
 	return fibonnacii(n-1) + fibonnacii(n-2)
 }
+
+// fabonicii with for loop
+
+func faboF(n int) int {
+	if n == 1 {
+		return 1
+	}
+	if n == 2 {
+		return 1
+	}
+	theSum := 1
+	fabp := 1
+	fabc := 1
+	for i := 0; i < n-1; i++ {
+		theSum = fabc + fabp
+		fabp = fabc
+		fabc = theSum
+	}
+	return theSum
+}

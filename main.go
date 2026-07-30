@@ -15,3 +15,12 @@ func factorial(n int) int {
 	}
 	return n * factorial(n-1)
 }
+func fibonnacii(n int) int {
+	if n == 1 {
+		return 1
+	}
+	if n == 2 {
+		return 2
+	}
+	return fibonnacii(n-1) + fibonnacii(n-2)
+}

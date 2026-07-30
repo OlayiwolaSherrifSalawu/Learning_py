@@ -51,8 +51,9 @@ def fibonacii_f(n:int) :
     fbc=1
     for i in range(1,n-1):
         fabi=fabp+fbc
-        
+
         fabp=fbc
         fbc=fabi
+    return fabi
 
-print(fabonicci(6))
+print(fibonacii_f(7))

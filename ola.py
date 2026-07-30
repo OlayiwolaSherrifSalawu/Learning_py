@@ -45,12 +45,34 @@ t3 = (3, var)
  
 t1, t2, t3 = t2, t3, t1
  
-print(t1, t2, t3)
+# print(t1, t2, t3)
 # dictionaries in python 
 
-pydic= {
-    "ola":"Jesus",
-    "salawu":"God",
-    "bise":"John"
-}
-print(pydic["ola"])
+# pydic= {
+#     "ola":"Jesus",
+#     "salawu":"God",
+#     "bise":"John"
+# }
+# print(pydic["ola"])
+# dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+ 
+# for keyss, vals in dictionary.items():
+#     print(keyss, "->", vals)
+
+
+tup = 1, 2, 3, 2, 4, 5, 6, 2, 7, 2, 8, 9
+duplicates = {}
+for i in tup:
+  if i in duplicates.keys():
+    duplicates[i]+=1
+  else:
+    duplicates[i]=1
+higest=0
+key=0
+for keys,val in duplicates.items():
+  if val>higest:
+    higest=val
+    key=keys
+  
+
+print(duplicates,"\n",f"key with highest count {key} -> {higest}") # outputs: 4

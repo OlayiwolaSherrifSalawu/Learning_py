@@ -46,3 +46,11 @@ t3 = (3, var)
 t1, t2, t3 = t2, t3, t1
  
 print(t1, t2, t3)
+# dictionaries in python 
+
+pydic= {
+    "ola":"Jesus",
+    "salawu":"God",
+    "bise":"John"
+}
+print(pydic["ola"])

@@ -27,8 +27,8 @@ def factorialF(n):
         for i in range(2,n+1):
             product*=i
         return product
-print(factorial(5),factorialF(6))
+# print(factorial(5),factorialF(6))
 
 # tuples
 des= (1,3,45,)
-print(des)
+print(des.count(1))

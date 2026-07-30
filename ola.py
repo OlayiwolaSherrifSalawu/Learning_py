@@ -69,10 +69,13 @@ for i in tup:
     duplicates[i]=1
 higest=0
 key=0
-for keys,val in duplicates.items():
-  if val>higest:
-    higest=val
-    key=keys
-  
+try:
+   for keys,val in duplicates.items():
+        if val>higest:
+            higest=val
+            key=keys
+except ValueError:
+   print("use a map and a tuple please")
+    
 
 print(duplicates,"\n",f"key with highest count {key} -> {higest}") # outputs: 4

@@ -40,4 +40,19 @@ def fabonicci(n:int):
         return 1
     return fabonicci(n-1)+fabonicci(n-2)
 
+# fibonacci with loops 
+def fibonacii_f(n:int) :
+    if n == 1:
+        return 1
+    elif n== 2:
+        return 1
+    fabi=1
+    fabp=1
+    fbc=1
+    for i in range(1,n-1):
+        fabi=fabp+fbc
+        
+        fabp=fbc
+        fbc=fabi
+
 print(fabonicci(6))

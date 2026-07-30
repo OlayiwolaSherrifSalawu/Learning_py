@@ -29,6 +29,15 @@ def factorialF(n):
         return product
 # print(factorial(5),factorialF(6))
 
-# tuples
-des= (1,3,45,)
-print(des.count(1))
+# # tuples
+# des= (1,3,45,)
+# print(des.count(1))
+# faboniccii with recursion 
+def fabonicci(n:int):
+    if n == 1:
+        return 1
+    if n== 2:
+        return 1
+    return fabonicci(n-1)+fabonicci(n-2)
+
+print(fabonicci(6))

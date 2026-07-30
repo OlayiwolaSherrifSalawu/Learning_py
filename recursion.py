@@ -16,4 +16,15 @@ def factorial(n):
     else :
      return   n* factorial(n-1)
  
-print(factorial(5))
+#  factorial with for loops 
+def factorialF(n):
+    if n < 1:
+        return None
+    elif n < 2 :
+        return 1
+    else:
+        product =1
+        for i in range(2,n+1):
+            product*=i
+        return product
+print(factorial(5),factorialF(6))

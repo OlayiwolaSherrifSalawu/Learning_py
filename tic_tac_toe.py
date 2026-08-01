@@ -20,6 +20,8 @@ def reduce_list(lst:list, num):
 def  cal_row_col(num:int):
     row=num//3
     col = (num%3)-1
+    if col <0:
+         row+=col
     return row, col
 def fixs_O(lst:list, num:int):
      row,col=cal_row_col(num)
@@ -29,4 +31,4 @@ def fix_O(num):
      cal_row_col(num)
 
 
-print(reduce_list([1,2,3,4,6,7,8,9],9))
+print(cal_row_col(9))

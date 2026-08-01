@@ -55,10 +55,18 @@ def fibonacii_f(n:int) :
         fabp=fbc
         fbc=fabi
     return fabi
-
-# print(fibonacii_f(7))
+# print(fibonacii_f(7))0
 def function(x=0,y=0):
     return x,y
 
+# def any():
+#     print(var+1,end='')
+# # var=1
+# any()
+# print(var)
+def fun(x):
+    if x==0:
+        return 0
+    return x + fun(x-1)
 
-print(function())
+print(fun(3))

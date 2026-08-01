@@ -56,4 +56,9 @@ def fibonacii_f(n:int) :
         fbc=fabi
     return fabi
 
-print(fibonacii_f(7))
+# print(fibonacii_f(7))
+def function(x=0,y=0):
+    return x,y
+
+
+print(function())

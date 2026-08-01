@@ -75,6 +75,15 @@ my_list = ['a','b','c','d']
 for i in range(len(my_list)-1):
     dic[my_list[i]]= (my_list[i],)
 
-for i in sorted(dic.keys()):
-    k = dic[i]
-    print(k[0])
+# for i in sorted(dic.keys()):
+#     k = dic[i]
+#     print(k[0])
+
+def func(x):
+    global y
+    y= x*x
+    return y
+
+(func(3))
+
+print(y)

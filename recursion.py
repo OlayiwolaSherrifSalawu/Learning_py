@@ -70,3 +70,11 @@ def fun(x):
     return x + fun(x-1)
 
 print(fun(3))
+dic={}
+my_list = ['a','b','c','d']
+for i in range(len(my_list)-1):
+    dic[my_list[i]]= (my_list[i],)
+
+for i in sorted(dic.keys()):
+    k = dic[i]
+    print(k[0])

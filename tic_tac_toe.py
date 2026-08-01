@@ -16,19 +16,19 @@ def reduce_list(lst:list, num):
      if num in lst:
           n = lst.index(num)
           del lst[n]
-     return lst
+          return lst
+     else:
+          return None
 def  cal_row_col(num:int):
     row=num//3
     col = (num%3)-1
     if col <0:
          row+=col
     return row, col
-def fixs_O(lst:list, num:int):
+def fixs_vals(board:list, num:int,val):
      row,col=cal_row_col(num)
-     lst[row][col]="O"
-     return lst
-def fix_O(num):
-     cal_row_col(num)
+     board[row][col]=val
+     return board
 
 
 print(cal_row_col(9))

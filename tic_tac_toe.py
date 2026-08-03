@@ -28,5 +28,8 @@ def fixs_vals(board:list, num:int,val):
      board[row][col]=val
      return board
 
-
+# the win helper functions
+"""
+the idea is by default i have a list of [1,2,3,4,6,7,8,9]
+"""
 print(cal_row_col(9))

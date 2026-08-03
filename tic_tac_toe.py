@@ -10,8 +10,6 @@ while i < len(board):
           maxs=  board[i][k]
      i+=1
 
-board[1][1]= "X"
-print(board, end="\n")
 def reduce_list(lst:list, num):
      if num in lst:
           n = lst.index(num)

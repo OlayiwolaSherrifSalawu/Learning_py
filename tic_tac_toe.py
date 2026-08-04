@@ -1,5 +1,5 @@
 # tic tac toe
-from random import randrange
+import random
 boards =[[i for i in range(1,4)]for r in range(3)]
 i = 1
 maxs=0
@@ -112,4 +112,16 @@ while STATUS != "WIN" or "LOOSE":
      STATUS=diagonal_win(boards,move)
      if STATUS:
           print("You Won")
-     
+          STATUS="WIN"
+     num= random.choice(playing_list)
+     row,col=cal_row_col(num)
+     boards[row][col]="X"
+     display_board(boards)
+     reduce_list(playing_list,num)
+     STATUS=diagonal_win(boards,move)
+     if STATUS:
+          print("You Loose")
+          STATUS="LOOSE"
+     if len(playing_list)<1:
+          print("it is a draw ")
+          break

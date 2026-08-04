@@ -1,13 +1,13 @@
 # tic tac toe
 
-board =[[i for i in range(1,4)]for r in range(3)]
+boards =[[i for i in range(1,4)]for r in range(3)]
 i = 1
 maxs=0
-while i < len(board):
-     maxs =  board[i-1][len(board[i])-1]
-     for k in range(len(board[i])):
-          board[i][k]= maxs+1
-          maxs=  board[i][k]
+while i < len(boards):
+     maxs =  boards[i-1][len(boards[i])-1]
+     for k in range(len(boards[i])):
+          boards[i][k]= maxs+1
+          maxs=  boards[i][k]
      i+=1
 
 def reduce_list(lst:list, num):
@@ -37,13 +37,20 @@ the idea is by default i have a list of [1,2,3,4,6,7,8,9]
 def diagonal_win(board:list, num:int):
      if num==1 or num==3:
           diagonal1= {
-               "top":(2,3),
-               "side":(4,7),
-               "diagonal": (5,9)
+               "top":(2,3,1),
+               "side":(4,7,1),
+               "diagonal": (1,5,9)
           }
           diagonal3= {
-                    "top":(2,1),
-                    "side":(4,7),
-                    "diagonal": (5,9)
-                    }
-print(cal_row_col(9))
+               "top":(2,1,3),
+               "side":(5,7,3),
+               "diagonal": (6,9,3)
+          }
+          diagonal= {}
+          if num==1:
+               diagonal= diagonal1
+          else:
+               diagonal= diagonal3
+          for vals in diagonal.values():
+               print(vals)
+print(diagonal_win(boards,3))

@@ -77,51 +77,63 @@ def diagonal_win(board:list, num:int):
      }
      
      diagonal= coordinates[num]
-
      for vals in diagonal.values():
           r1,c1=cal_row_col(vals[0])
           r2,c2= cal_row_col(vals[1])
           r3,c3= cal_row_col(vals[2])
           if (board[r1][c1] == board[r2][c2]==board[r3][c3]):
-               return True
-          else: 
-               return None
+               return "win"
+    
 
 
 def display_board(board:list):
      for i in board:
           print(i)
 
-STATUS= ""
+status= ""
 boards[1][1]="X"
 playing_list= [1,2,3,4,6,7,8,9]
-while STATUS != "WIN" or "LOOSE":
+while status!="WIN" or status != "LOOSE":
+     
      display_board(boards)
      print()
      try:
           move= int(input("Enter Your move: "))
      except ValueError:
           print("Only Integers allowed.")
-     if move not in playing_list:
-          print("cant play this number")
-          continue
+    
+     try:
+          if move not in playing_list:
+               print("cant play this number")
+               continue
+     except NameError:
+          print("enter a value pls")
      row,col=cal_row_col(move)
      
      boards[row][col]="O"
      reduce_list(playing_list,move)
-     STATUS=diagonal_win(boards,move)
-     if STATUS:
+     # print(boards)
+     status=diagonal_win(boards,move)
+     # print(status)
+     if status=="win":
           print("You Won")
-          STATUS="WIN"
+          status="WIN"
+          break
      num= random.choice(playing_list)
      row,col=cal_row_col(num)
      boards[row][col]="X"
-     display_board(boards)
+     # display_board(boards)
      reduce_list(playing_list,num)
-     STATUS=diagonal_win(boards,move)
-     if STATUS:
+     status=diagonal_win(boards,num)
+     # print(status)
+     if status=="win":
           print("You Loose")
-          STATUS="LOOSE"
+          status="LOOSE"
+          break
      if len(playing_list)<1:
           print("it is a draw ")
           break
+
+
+
+

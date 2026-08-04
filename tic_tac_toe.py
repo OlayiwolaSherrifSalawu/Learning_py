@@ -1,5 +1,5 @@
 # tic tac toe
-
+from random import randrange
 boards =[[i for i in range(1,4)]for r in range(3)]
 i = 1
 maxs=0
@@ -83,12 +83,33 @@ def diagonal_win(board:list, num:int):
           r2,c2= cal_row_col(vals[1])
           r3,c3= cal_row_col(vals[2])
           if (board[r1][c1] == board[r2][c2]==board[r3][c3]):
-               return "you won"
+               return True
+          else: 
+               return None
 
 
-def printBoard(board:list):
+def display_board(board:list):
      for i in board:
           print(i)
 
-printBoard(boards)
-print(diagonal_win(boards,3))
+STATUS= ""
+boards[1][1]="X"
+playing_list= [1,2,3,4,6,7,8,9]
+while STATUS != "WIN" or "LOOSE":
+     display_board(boards)
+     print()
+     try:
+          move= int(input("Enter Your move: "))
+     except ValueError:
+          print("Only Integers allowed.")
+     if move not in playing_list:
+          print("cant play this number")
+          continue
+     row,col=cal_row_col(move)
+     
+     boards[row][col]="O"
+     reduce_list(playing_list,move)
+     STATUS=diagonal_win(boards,move)
+     if STATUS:
+          print("You Won")
+     

@@ -52,5 +52,13 @@ def diagonal_win(board:list, num:int):
           else:
                diagonal= diagonal3
           for vals in diagonal.values():
-               print(vals)
+               r1,c1=cal_row_col(vals[0])
+               print(vals[0],r1,c1)
+               r2,c2= cal_row_col(vals[1])
+               r3,c3= cal_row_col(vals[2])
+               if (board[r1][c1] == board[r2][c2]==board[r3][c3]):
+                    return "you won"
+
+boards[0][2],boards[1][2]=boards[2][2],boards[2][2]
+print(boards)
 print(diagonal_win(boards,3))

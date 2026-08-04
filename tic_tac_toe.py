@@ -35,7 +35,7 @@ the idea is by default i have a list of [1,2,3,4,6,7,8,9]
 
 # i would have to write the win two functions to check 
 def diagonal_win(board:list, num:int):
-     big_map= {
+     coordinates= {
           1:{
           "top":(2,3,1),
           "side":(4,7,1),
@@ -76,19 +76,19 @@ def diagonal_win(board:list, num:int):
           
      }
      
-     diagonal= big_map[num]
+     diagonal= coordinates[num]
 
      for vals in diagonal.values():
           r1,c1=cal_row_col(vals[0])
-          print(vals[0],r1,c1)
           r2,c2= cal_row_col(vals[1])
           r3,c3= cal_row_col(vals[2])
           if (board[r1][c1] == board[r2][c2]==board[r3][c3]):
                return "you won"
-# non diagonal wins 
 
-     
-     
-boards[0][2],boards[1][2]=boards[2][2],boards[2][2]
-print(boards)
+
+def printBoard(board:list):
+     for i in board:
+          print(i)
+
+printBoard(boards)
 print(diagonal_win(boards,3))

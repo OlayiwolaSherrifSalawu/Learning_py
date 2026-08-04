@@ -55,7 +55,24 @@ def diagonal_win(board:list, num:int):
           "top":(7,8,9),
           "side":(9,6,3),
           "diagonal": (9,5,1)
-          }
+          },
+          # this are the inplace diagonals
+          2:{
+          "top":(1,2,3),
+          "side":(2,5,8),
+          },
+          4:{
+          "top":(4,5,6),
+          "side":(1,4,7),
+          },
+          6:{
+          "top":(4,5,6),
+          "side":(3,6,9),
+          },
+          8:{
+          "top":(2,5,8),
+          "side":(7,8,9),
+          },
           
      }
      

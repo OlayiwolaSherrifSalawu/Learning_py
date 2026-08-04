@@ -101,25 +101,23 @@ while status!="WIN" or status != "LOOSE":
           move= int(input("Enter Your move: "))
      except ValueError:
           print("Only Integers allowed.")
+          continue
     
      try:
           if move not in playing_list:
                print("cant play this number")
                continue
+          row,col=cal_row_col(move)
+          boards[row][col]="O"
+          reduce_list(playing_list,move)
+          status=diagonal_win(boards,move)
      except NameError:
           print("enter a value pls")
-     row,col=cal_row_col(move)
-     
-     boards[row][col]="O"
-     reduce_list(playing_list,move)
-     # print(boards)
-     status=diagonal_win(boards,move)
+          continue
      # print(status)
      if status=="win":
           display_board(boards)
-
           print("You Won")
-
           status="WIN"
           break
      num= random.choice(playing_list)

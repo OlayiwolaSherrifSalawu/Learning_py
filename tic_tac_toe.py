@@ -116,7 +116,10 @@ while status!="WIN" or status != "LOOSE":
      status=diagonal_win(boards,move)
      # print(status)
      if status=="win":
+          display_board(boards)
+
           print("You Won")
+
           status="WIN"
           break
      num= random.choice(playing_list)
@@ -127,6 +130,7 @@ while status!="WIN" or status != "LOOSE":
      status=diagonal_win(boards,num)
      # print(status)
      if status=="win":
+          display_board(boards)
           print("You Loose")
           status="LOOSE"
           break

@@ -32,4 +32,18 @@ def fixs_vals(board:list, num:int,val):
 """
 the idea is by default i have a list of [1,2,3,4,6,7,8,9]
 """
+
+# i would have to write the win two functions to check 
+def diagonal_win(board:list, num:int):
+     if num==1 or num==3:
+          diagonal1= {
+               "top":(2,3),
+               "side":(4,7),
+               "diagonal": (5,9)
+          }
+          diagonal3= {
+                    "top":(2,1),
+                    "side":(4,7),
+                    "diagonal": (5,9)
+                    }
 print(cal_row_col(9))

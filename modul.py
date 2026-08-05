@@ -1,4 +1,4 @@
-import math 
+import math as mth
 import sys
 
-print(math.sin(math.pi/2))
+print(mth.sin(mth.pi/2))

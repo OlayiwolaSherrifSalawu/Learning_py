@@ -5,4 +5,11 @@ for v in range(2):
 
 del my_list[:]    
 x= [i for i in range(-1,-2)]
-print(x)
+# print(x)
+def fun(x,y):
+     if x%y== 0:
+          return x
+     else:
+          return (x,y-1)
+
+print(fun(3,3))

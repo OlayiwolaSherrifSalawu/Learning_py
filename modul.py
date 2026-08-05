@@ -1,4 +1,3 @@
-import math as mth
-import sys
-
-print(mth.sin(mth.pi/2))
+from math import pi as PI, sin as sine
+  
+print(sine(PI/2))

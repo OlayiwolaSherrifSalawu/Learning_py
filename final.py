@@ -4,4 +4,5 @@ for v in range(2):
      my_list.insert(-1,my_list[v])
 
 del my_list[:]    
-print("a","b","c", sep="sep")
+x= [i for i in range(-1,-2)]
+print(x)

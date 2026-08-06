@@ -40,8 +40,11 @@ y = 2.6
 
 # print(choice(my_list))
 # print(sample(my_list, 5))
-# print(sample(my_list, 10))
-print(dir(platform))
-print(platform(aliased=False, terse=False))
-print(platform(0, 1))
-print(machine())
+# # print(sample(my/_list, 10))
+# print(dir(platform))
+# print(platform(aliased=False, terse=False))
+# print(platform(0, 1))
+# print(machine())
+
+# print(processor())
+print(exp(4))

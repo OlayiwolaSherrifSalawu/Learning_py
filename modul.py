@@ -1,5 +1,6 @@
 from math import e, exp, log,floor,ceil,trunc
 from random import random, randint, randrange, choice,sample
+from platform import platform
 
 # print(pow(e, 1) == exp(log(e)))
 # print(pow(2, 2) == exp(2 * log(2)))
@@ -30,13 +31,16 @@ y = 2.6
 
 
 
-for i in range(10):
-    print(randint(1, 10), end=',')
+# for i in range(10):
+#     print(randint(1, 10), end=',')
 
 
-my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
-print(choice(my_list))
-print(sample(my_list, 5))
-print(sample(my_list, 10))
+# print(choice(my_list))
+# print(sample(my_list, 5))
+# print(sample(my_list, 10))
+print(platform(aliased=False, terse=False))
+print(platform(aliased=False, terse=False))
+

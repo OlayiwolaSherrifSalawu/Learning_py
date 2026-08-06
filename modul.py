@@ -1,6 +1,6 @@
 from math import e, exp, log,floor,ceil,trunc
 from random import random, randint, randrange, choice,sample
-from platform import platform, machine
+from platform import platform, machine,processor
 
 # print(pow(e, 1) == exp(log(e)))
 # print(pow(2, 2) == exp(2 * log(2)))
@@ -41,6 +41,7 @@ y = 2.6
 # print(choice(my_list))
 # print(sample(my_list, 5))
 # print(sample(my_list, 10))
+print(dir(platform))
 print(platform(aliased=False, terse=False))
 print(platform(0, 1))
 print(machine())

@@ -1,3 +1,3 @@
-from math import pi as PI, sin as sine
+import math
   
-print(sine(PI/2))
+print(dir(math))

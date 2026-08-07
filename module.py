@@ -1,4 +1,4 @@
-"" module.py - an example of a Python module ""
+
  
 __counter = 0
  

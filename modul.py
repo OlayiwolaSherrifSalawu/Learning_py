@@ -1,3 +1,5 @@
-from math import pi as PI, sin as sine
-  
-print(sine(PI/2))
+import my_first_module
+
+layi= my_first_module.LayisLearning
+
+print(layi("olayiwola","ajimola"))

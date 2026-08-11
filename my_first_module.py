@@ -32,3 +32,5 @@ class LayisLearning:
     self.girl=girl
   def __str__(self):
     return f"{self.boy} really likes {self.girl}"
+  def boy(num):
+    print(f"he has {num} ballon dior")

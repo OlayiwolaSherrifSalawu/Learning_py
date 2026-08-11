@@ -32,7 +32,7 @@ class LayisLearning:
     self.girl=girl
   def __str__(self):
     return f"{self.boy} really likes {self.girl}"
-  def boys(num):
+  def boys(self, num):
     print(f"he has {num} ballon dior")
   def __repr__(self):
     return f"hi {self.boy}, hello {self.girl}"

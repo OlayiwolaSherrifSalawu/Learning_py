@@ -35,4 +35,4 @@ class LayisLearning:
   def boys(self, num):
     print(f"he has {num} ballon dior")
   def __repr__(self):
-    return f"hi {self.boy}, hello {self.girl}"
+    return f"hi {self.boys}, hello"

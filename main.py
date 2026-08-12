@@ -3,4 +3,4 @@ import s__q
 path.append('..\\packages')
 
 algo=s__q.Queue
-print(algo.add("ola"))
+print(algo.add(val="ola"))

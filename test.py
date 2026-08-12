@@ -1,4 +1,6 @@
-from random import randint
+import platform
 
-for i in range(2):
-    print(randint(1,2), end="")
+print(platform.processor())
+print(platform.version())
+print(platform.system())
+

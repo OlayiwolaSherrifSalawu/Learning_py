@@ -1,6 +1,8 @@
-from sys import path
-import s__q
-path.append('..\\packages')
 
-algo=s__q.Queue
-print(algo.add(val="ola"))
+import s__q
+
+
+algo=s__q.Queue()
+st=algo.add(val="455 ")
+
+print(st)

@@ -1,12 +1,14 @@
 class Algorithm:
-    def __init__(self,stack:list, val):
+    
+    def __init__(self):
+        stack=[]    
         self.stack= stack
-        self.val= val
+  
         
 
 class Queue(Algorithm):
-    def add(self):
-        self.stack.append(self.val)
+    def add(self,val):
+        self.stack.append(val)
         return self.stack
     def pop(self):
         # ensure that i dont try to pop an empty list 

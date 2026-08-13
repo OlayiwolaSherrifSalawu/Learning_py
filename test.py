@@ -1,6 +1,6 @@
 
 # writing my split function 
-def my_split(word:str):
+def mysplit(word:str):
     lst= []
     
     if len(word)== 0:
@@ -16,4 +16,9 @@ def my_split(word:str):
             new_word=""
     return lst
 
-print(my_split())
+print(mysplit("To be or not to be, that is the question"))
+print(mysplit("To be or not to be,that is the question"))
+print(mysplit("   "))
+print(mysplit(" abc "))
+print(mysplit(""))
+    

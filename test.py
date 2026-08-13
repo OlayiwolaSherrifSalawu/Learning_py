@@ -14,4 +14,6 @@ def my_split(word:str):
         elif new_word !="" and (i == " " or i == "\n"):
             lst.append(new_word)
             new_word=""
-        
+    return lst
+
+print(my_split())

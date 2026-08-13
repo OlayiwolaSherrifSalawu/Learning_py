@@ -21,4 +21,8 @@ print(mysplit("To be or not to be,that is the question"))
 print(mysplit("   "))
 print(mysplit(" abc "))
 print(mysplit(""))
-    
+s1 = 'Where are the snows of yesteryear?'
+s2 = s1.split()
+s3 = sorted(s2)
+print(s2)
+ 

@@ -4,12 +4,16 @@ def cipher(word:str, num:int):
         if not char.isalpha():
             text += char
             continue
-        code = ord(char) +num
-        if  char.upper():
-            if code > ord('Z'):
+        code = 0
+        if  char.isupper():
+            code = ord(char) +num
+            
+            if code >= ord('Z'):
                 code = code- ord('Z')+ord('A')
-        elif char.lower():
-            if code > ord('z'):
+        elif char.islower():
+            code = ord(char) +num
+            print(code)
+            if code >= ord('z'):
                 code = code- ord('z')+ord('a')
         text += chr(code)
     return text

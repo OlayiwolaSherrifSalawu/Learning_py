@@ -9,5 +9,17 @@ def digit_of_life(str2:str):
 
 def validate(str2:str):
     for i in str2 :
-        if i.isalnum():
+        if i.isalpha():
             return False
+
+def collect_args():
+    values = input("enter you date of birth in this format YYYYDDMM: ")
+    return values
+
+words=collect_args()
+valid= validate(words)
+if not valid:
+    print("please ensure the value you pass are all number no letters please")
+
+if valid:
+    print(digit_of_life(words))

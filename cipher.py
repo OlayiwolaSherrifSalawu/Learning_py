@@ -1,16 +1,17 @@
 def cipher(word:str, num:int):
+    text=""
     for char in word:
         if not char.isalpha():
             text += char
             continue
         code = ord(char) +num
-    if  char.upper():
-        if code > ord('Z'):
-            code = code- ord('Z')+ord('A')
-    elif char.lower():
-         if code > ord('z'):
-            code = code- ord('z')+ord('a')
-    text += chr(code)
+        if  char.upper():
+            if code > ord('Z'):
+                code = code- ord('Z')+ord('A')
+        elif char.lower():
+            if code > ord('z'):
+                code = code- ord('z')+ord('a')
+        text += chr(code)
     return text
     
 
@@ -29,4 +30,5 @@ def collectValue():
 
 
 words,nums= collectValue()
-print(words,nums)
+text=cipher(words,nums)
+print(text)

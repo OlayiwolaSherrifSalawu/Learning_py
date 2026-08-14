@@ -11,8 +11,16 @@ def cipher(word:str, num:int):
          if code > ord('z'):
             code = code- ord('z')+ord('a')
     text += chr(code)
-
+    return text
     
 
-
-
+def collectValue():
+    word = input("enter a word you would like to cipher: ")
+    try: 
+        num= int(input("Enter a cipher key between 1-25 ensure it is a number: "))
+        if num<1 or num >25: 
+            print("please follow the instruction and dont act like an animal")
+            return
+    except ValueError:
+        print("please ensure you enter a number: ")
+    return word, num 

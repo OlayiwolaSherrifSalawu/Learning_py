@@ -14,8 +14,9 @@ def anagram(str1:str, str2s:str):
     
    
 def clean_string(str1:str, str2:str):
-    return str1.replace(" ","").lower,str2.replace(" ","").lower
 
+    word1, word2= str1.replace(" ","").lower(), str2.replace(" ","").lower()
+    return word1,word2
 def collect_arg():
     first = input("enter a word: ")
     second = input("enter another word: ")
@@ -23,6 +24,6 @@ def collect_arg():
 
 
 word1, word2= collect_arg()
-word1,word2= clean_string(word1,word2)
+word1s,word2s= clean_string(word1,word2)
 print(anagram(word1,word2))
 

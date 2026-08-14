@@ -18,3 +18,4 @@ def collect_arg():
 
 word1, word2= collect_arg()
 word1,word2= clean_string(word1,word2)
+print(anagram(word1,word2))

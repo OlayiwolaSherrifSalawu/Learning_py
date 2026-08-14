@@ -4,9 +4,9 @@ def split_word(str2:str):
         lst.append(i)
     return lst
 def anagram(str1:str, str2:str):
-   print(str1.split())
-   st1= sorted(str1.split(""))
-   st2= sorted(str2.split(""))
+   
+   st1= sorted(split_word(str1))
+   st2= sorted(split_word(str2))
    if "".join(st1)=="".join(st2):
        return f"this words are anagram"
    else:

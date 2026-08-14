@@ -10,4 +10,4 @@ def palindrome(stre:str):
     return f"it is a palindrome"
 
 
-print(palindrome("Ten animals I slam in a net"))
+print(palindrome("Eleven animals I slam in a net"))

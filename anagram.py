@@ -1,5 +1,10 @@
+def split_word(str2:str):
+    lst =[]
+    for i in str2:
+        lst.append(i)
+    return lst
 def anagram(str1:str, str2:str):
-    
+   print(str1.split())
    st1= sorted(str1.split(""))
    st2= sorted(str2.split(""))
    if "".join(st1)=="".join(st2):
@@ -17,6 +22,8 @@ def collect_arg():
     return first, second
 
 
-word1, word2= collect_arg()
-word1,word2= clean_string(word1,word2)
-print(anagram(word1,word2))
+# word1, word2= collect_arg()
+# word1,word2= clean_string(word1,word2)
+# print(anagram(word1,word2))
+
+print(anagram("silent","listen"))

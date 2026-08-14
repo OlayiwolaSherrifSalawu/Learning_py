@@ -1,6 +1,6 @@
 def split_word(str2:str):
     lst =[]
-    for i in range(str2):
+    for i in range(len(str2)):
         lst.append(str2[i])
     return lst
 def anagram(str1:str, str2s:str):

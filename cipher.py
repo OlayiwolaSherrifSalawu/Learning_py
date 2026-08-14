@@ -1,24 +1,18 @@
-line = input("Enter a line of numbers - separate them with spaces: ")
-strings = line.split()
-total = 0
-try:
-    for substr in strings:
-        total += float(substr)
-    print("The total is:", total)
-except:
-    print(substr, "is not a number.")
-    
-    
-# Caesar cipher - decrypting a message.
-cipher = input('Enter your cryptogram: ')
-text = ''
-for char in cipher:
-    if not char.isalpha():
-        continue
-    char = char.upper()
-    code = ord(char) - 1
-    if code < ord('A'):
-        code = ord('Z')
+def cipher(word:str, num:int):
+    for char in word:
+        if not char.isalpha():
+            text += char
+            continue
+        code = ord(char) +num
+    if  char.upper():
+        if code > ord('Z'):
+            code = code- ord('Z')+ord('A')
+    elif char.lower():
+         if code > ord('z'):
+            code = code- ord('z')+ord('a')
     text += chr(code)
 
-print(text)
+    
+
+
+

@@ -12,5 +12,6 @@ digits = [ '1111110',  	# 0
 bits= '0010110'
 row0 = ' ' + ('#' if bits[0]=='1' else ' ') + ('#' if bits[1]=='1' else ' ')
 row4 =  ('###' if bits[3]=='1' else '   ')
-
+row1= ('#' if bits[5]=='1' else ' ') + ' ' +('#' if bits[1]=='1' else ' ')
+row2= 
 print(row4)

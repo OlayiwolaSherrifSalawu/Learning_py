@@ -9,16 +9,8 @@ digits = [ '1111110',  	# 0
 	   '1111111',	# 8
 	   '1111011',	# 9
 	   ]
+bits= '0010110'
+row0 = ' ' + ('#' if bits[0]=='1' else ' ') + ('#' if bits[1]=='1' else ' ')
+row4 =  ('###' if bits[3]=='1' else '   ')
 
-maps= {
-    "0":"###",
-    "1":"# #",
-    "2":"###",
-    "3":"# #",
-    "4":"###"
-}
-
-
-for i in maps.values(): 
-    print(i)
-# i dont even know what this is supposed to do but i will try to figure it out
+print(row4)

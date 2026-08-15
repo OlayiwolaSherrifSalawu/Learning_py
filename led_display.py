@@ -10,10 +10,15 @@ digits = [ '1111110',  	# 0
 	   '1111011',	# 9
 	   ]
 
+maps= {
+    "0":"###",
+    "1":"# #",
+    "2":"###",
+    "3":"# #",
+    "4":"###"
+}
 
-def print_number(num):
-    # Write the function here.
-    print(num)
 
-print_number(int(input("Enter the number you wish to display: ")))
+for i in maps.values(): 
+    print(i)
 # i dont even know what this is supposed to do but i will try to figure it out

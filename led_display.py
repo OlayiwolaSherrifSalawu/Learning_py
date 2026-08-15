@@ -16,7 +16,7 @@ def row_function(bits:str,index):
 	rows={
           "0": (' 'if bits[0]=='0'and bits[6]=='0'and bits[3]=='0'else '#') + ('#' if bits[0]=='1' else ' ') + '#',
 	"1": ('#' if bits[5]=='1' else ' ') + ' ' +('#' if bits[1]=='1' else ' '),
-     "2":('#' if (bits[0]=='1' and (bits[1]=='1'or bits[5]=='1')) or (bits[5]=='1'and bits[1]=='1' and bits[0]=='0') else ' ') + ('#' if bits[6]=='1' else ' ') + '#',
+     "2":('#' if ((bits[5]=='1' or bits[1]=='1')and bits[6]=='1')or ((bits[5]=='1'and bits[1]=='1')and bits[6]=='0') else ' ') + ('#' if bits[6]=='1' else ' ') + '#',
      "3": ('#' if bits[4]=='1' else ' ') + ' ' +('#' if bits[2]=='1' else ' '),
      "4": ('##' if bits[3]=='1' else '  ')+'#',
      
@@ -56,4 +56,4 @@ def print_led_easy(num:str):
         i+=1
 
 # print_led_easy("689")
-print_led_hard("577")
+print_led_hard("1234567890")

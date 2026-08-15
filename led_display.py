@@ -32,8 +32,14 @@ map= {
    "9": ["###","# #", "###","  #","###"],
    }
 
-for i in range(5):
-    for k in map.values():
-        print(k[i],end=" ")
-    print()
-    i+=1
+
+
+def print_led_easy(w1:str):
+    for i in range(5):
+        for k in w1:
+            val=map[k]
+            print(val[i],end=" ")
+        print()
+        i+=1
+
+print_led_easy("689")

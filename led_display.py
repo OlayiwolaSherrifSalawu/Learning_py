@@ -13,5 +13,5 @@ bits= '0010110'
 row0 = ' ' + ('#' if bits[0]=='1' else ' ') + ('#' if bits[1]=='1' else ' ')
 row4 =  ('###' if bits[3]=='1' else '   ')
 row1= ('#' if bits[5]=='1' else ' ') + ' ' +('#' if bits[1]=='1' else ' ')
-row2= 
+row2= ('#' if (bits[0]=='1' and (bits[1]=='1'or bits[5]=='1')) or (bits[5]=='1'and bits[1]=='1' and bits[0]=='1') else ' ') + ('#' if bits[6]=='1' else ' ') + '#'
 print(row4)

@@ -26,7 +26,7 @@ def row_function(bits:str,index):
 def print_led_hard(nums:str):
      for i in range(5):
         for k in nums:
-            print(row_function(digits[k],i), end=" ")
+            print(row_function(digits[k],str(i)), end=" ")
         print()
         i+=1
           
@@ -56,3 +56,4 @@ def print_led_easy(num:str):
         i+=1
 
 # print_led_easy("689")
+print_led_hard("577")

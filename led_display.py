@@ -55,5 +55,5 @@ def print_led_easy(num:str):
         print()
         i+=1
 
-# print_led_easy("689")
-print_led_hard("1234567890")
+print_led_easy("689")
+print_led_hard("911")

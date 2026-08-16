@@ -28,7 +28,7 @@ def print_led_hard(nums:str):
         for k in nums:
             print(row_function(digits[k],str(i)), end=" ")
         print()
-        i+=1
+        
           
      
 # easy way
@@ -53,7 +53,9 @@ def print_led_easy(num:str):
             val=map[k]
             print(val[i],end=" ")
         print()
-        i+=1
+      
 
-print_led_easy("689")
-print_led_hard("911")
+# print_led_easy("06600")
+print_led_hard("f")
+
+

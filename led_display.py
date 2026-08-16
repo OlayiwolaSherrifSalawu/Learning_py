@@ -56,6 +56,7 @@ def print_led_easy(num:str):
       
 
 # print_led_easy("06600")
-print_led_hard("f")
-
+# print_led_hard("f")
+x= '\''
+print(3*"abc"+"xyz")
 

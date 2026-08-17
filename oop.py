@@ -13,3 +13,16 @@ class Stack:
 
 hav= Stack()
 
+class Queue:
+    def __init__(self):
+        self.__queue=[]
+    def put(self,val):
+        self.__queue.append(val)
+    def pop(self):
+        val = self.__queue[0]
+        del self.__queue[0]
+        return val
+    def get(self):
+        val= self.__queue[0]
+        return val
+    

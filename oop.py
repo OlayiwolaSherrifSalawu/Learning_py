@@ -25,4 +25,7 @@ class Queue:
     def get(self):
         val= self.__queue[0]
         return val
-    
+
+class AddingQueu(Queue):
+    def __init__(self):
+        super().__init__()

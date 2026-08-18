@@ -59,9 +59,9 @@ example_object_3 = ExampleClass(4)
 example_object_3.third = 5
 example_object_1.fourth= 7
  
-print(example_object_1.__dict__)
-print(example_object_2.__dict__)
-print(example_object_3.__dict__)
+# print(example_object_1.__dict__)
+# print(example_object_2.__dict__)
+# print(example_object_3.__dict__)
 
 def print_exception_tree(thisclass, nest = 0):
     if nest > 1:

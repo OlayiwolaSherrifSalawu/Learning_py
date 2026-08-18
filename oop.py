@@ -57,6 +57,7 @@ example_object_2.set_second(3)
  
 example_object_3 = ExampleClass(4)
 example_object_3.third = 5
+example_object_1.fourth= 7
  
 print(example_object_1.__dict__)
 print(example_object_2.__dict__)

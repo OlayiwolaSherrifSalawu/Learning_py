@@ -28,4 +28,15 @@ class Queue:
 
 class AddingQueu(Queue):
     def __init__(self):
-        super().__init__()
+        # super().__init__()
+        self.__Queue= Queue(self)
+        self.__sum=0
+    def add(self,val):
+        self.__sum+=val
+        self.__Queue.put(val)
+    def get_sum(self):
+        return self.__sum
+    def pop(self):
+        val= self.__Queue.pop()
+        self.__sum-= val
+        return val

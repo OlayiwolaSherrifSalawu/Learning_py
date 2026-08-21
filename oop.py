@@ -75,5 +75,19 @@ def print_exception_tree(thisclass, nest = 0):
         print_exception_tree(subclass, nest + 1)
 
 
-print_exception_tree(BaseException)
-    
+# print_exception_tree(BaseException)
+
+
+def reciprocal(n):
+    try:
+        n = 1 / n
+    except ZeroDivisionError:
+        print("Division failed")
+        return None
+    else:
+        print("Everything went fine")
+        return n
+
+
+print(reciprocal(2))
+print(reciprocal(0))

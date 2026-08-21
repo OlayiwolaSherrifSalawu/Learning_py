@@ -89,8 +89,8 @@ def reciprocal(n):
         return n
 
 
-print(reciprocal(2))
-print(reciprocal(0))
+# print(reciprocal(2))
+# print(reciprocal(0))
 
 
 def print_args(args):

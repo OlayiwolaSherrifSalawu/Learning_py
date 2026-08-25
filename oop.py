@@ -121,3 +121,5 @@ except Exception as e:
     print(e, e.__str__(), sep=' : ', end=' : ')
     print_args(e.args)
 	
+
+print(example_object_1._ExampleClass__first)

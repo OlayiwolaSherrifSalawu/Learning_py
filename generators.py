@@ -14,3 +14,7 @@ class Fib():
         ret = self.__p1+ self.__p2
         self.__p1, self.__p2= self.__p2, ret
         return ret
+
+
+for i in Fib(10):
+    print(i)

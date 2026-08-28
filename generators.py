@@ -16,5 +16,6 @@ class Fib():
         return ret
 
 
-for i in Fib(10):
-    print(i)
+
+
+print("HELLO HI ")

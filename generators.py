@@ -31,3 +31,11 @@ list_2 = [10 ** ex for ex in range(6)]
 
 print(list_1)
 print(list_2)
+
+the_list = []
+
+for x in range(10):
+    the_list.append(1 if x % 2 == 0 else 0)
+
+print(the_list)
+    

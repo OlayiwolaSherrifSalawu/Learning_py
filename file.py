@@ -4,4 +4,11 @@ try:
     stream.close()
 except Exception as exc:
     print("Cannot open the file:", exc)
+
+
+
+try:
+    # Some stream operations.
+except IOError as exc:
+    print(exc.errno)
  

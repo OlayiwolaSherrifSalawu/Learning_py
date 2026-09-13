@@ -11,4 +11,17 @@ except Exception as exc:
         print("You've opened too many files.")
     else:
         print("The error number is:", exc.errno)
-        
+
+
+
+import errno
+ 
+try:
+    stream = open("file", "rb")
+    print("exists")
+    stream.close()
+except IOError as error:
+    if error.errno == errno.ENOENT:
+        print("absent")
+    else:
+        print("unknown")

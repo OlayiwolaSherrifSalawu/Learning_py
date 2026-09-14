@@ -37,4 +37,17 @@ try:
 	file.close()
 except IOError as e:
 	print("I/O error occurred: ", strerror(e.errno))
-    
+
+from os import strerror
+
+byte= bytearray(10)
+
+data=[]
+for i in byte:
+      data[i]= 10+i
+try:
+      file= open('file.bin','wt')
+      file.write(data)
+      file.close()
+except IOError as e:
+      print("an error occured ", strerror(e.errno()))    

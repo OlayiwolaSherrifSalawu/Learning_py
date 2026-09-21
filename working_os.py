@@ -1,4 +1,7 @@
-import os 
-# print(os.uname())   
+# print(os.name)
+import os
 
-print(os.name)
+os.makedirs("my_first_directory/my_second_directory")
+os.chdir("my_first_directory")
+print(os.listdir())
+    

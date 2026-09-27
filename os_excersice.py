@@ -12,8 +12,10 @@ def path (path, dir):
 
 
 def recursiveNumber(n:int) ->int:
-    if n ==1 or n== 2:
+    if n ==1 :
         return n
-    return n + recursiveNumber(n-1)
+    if n%2==0:
+        return n/2
+    return n * recursiveNumber(n-1)
 
-print(4)
+print(recursiveNumber(7))

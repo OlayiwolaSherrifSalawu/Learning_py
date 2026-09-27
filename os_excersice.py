@@ -4,10 +4,10 @@ from pathlib import Path
 
 lists=os.listdir()
 newList= [ f for f in lists if Path(f).is_dir()]
-def path (path, dir):
+def path(path, dir):
     lists=os.listdir(path)
-    newList= [ f for f in lists if Path(f).is_dir()]
-    print(newList)
+    newList=   [f for f in lists if os.path.isdir(os.path.join(path, f))]
+    
 
 
 def recursiveNumber(n:int) ->int:
@@ -17,4 +17,4 @@ def recursiveNumber(n:int) ->int:
         return n/2
     return n * recursiveNumber(n-1)
 
-print(recursiveNumber(7))
+print(path("extra","good"))

@@ -7,8 +7,7 @@ newList= [ f for f in lists if Path(f).is_dir()]
 def path (path, dir):
     lists=os.listdir(path)
     newList= [ f for f in lists if Path(f).is_dir()]
-    if dir in newList:
-        print(sorted(lists))
+    print(newList)
 
 
 def recursiveNumber(n:int) ->int:

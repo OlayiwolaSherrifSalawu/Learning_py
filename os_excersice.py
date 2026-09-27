@@ -9,3 +9,11 @@ def path (path, dir):
     newList= [ f for f in lists if Path(f).is_dir()]
     if dir in newList:
         print(sorted(lists))
+
+
+def recursiveNumber(n:int) ->int:
+    if n ==1 or n== 2:
+        return n
+    return n + recursiveNumber(n-1)
+
+print(4)

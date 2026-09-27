@@ -5,10 +5,12 @@ from pathlib import Path
 lists=os.listdir()
 newList= [ f for f in lists if Path(f).is_dir()]
 def path(path, dir):
+    paths= ""
     lists=os.listdir(path)
     newList=   [f for f in lists if os.path.isdir(os.path.join(path, f))]
-    
-
+    if dir in newList:
+        paths= f'{path}/{dir}'
+    return paths
 
 def recursiveNumber(n:int) ->int:
     if n ==1 :
